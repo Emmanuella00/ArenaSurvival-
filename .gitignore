@@ -1,0 +1,96 @@
+# This .gitignore file is placed at the root of your Unity project directory
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+/[Mm]emoryCaptures/
+/[Rr]ecordings/
+.utmp/
+
+# Log files
+*.log
+
+# ---------------------------------------------------------------------
+# 2. Files your code editor generates (Unity recreates them)
+# ---------------------------------------------------------------------
+# Visual Studio
+.vs/
+*.csproj
+*.unityproj
+*.sln
+*.slnx
+*.suo
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+*.tmp
+ExportedObj/
+.consulo/
+
+# Generated meta files for the debug files above
+*.pidb.meta
+*.pdb.meta
+*.mdb.meta
+
+# JetBrains Rider
+.idea/
+*.DotSettings.user
+/[Aa]ssets/Plugins/Editor/JetBrains*
+
+# VS Code (personal editor settings)
+.vscode/
+
+# Gradle cache (Android builds)
+.gradle/
+
+# ---------------------------------------------------------------------
+# 3. Build outputs (share builds through itch.io / Drive, not Git)
+# ---------------------------------------------------------------------
+*.apk
+*.aab
+*.app
+*.unitypackage
+*.unitypackage.meta
+crashlytics-build.properties
+
+# ---------------------------------------------------------------------
+# 4. Crash reports and auto-generated test files
+# ---------------------------------------------------------------------
+sysinfo.txt
+mono_crash.*
+InitTestScene*.unity*
+/[Aa]ssets/[Ii]nit[Tt]est[Ss]cene*.unity*
+
+
+
+# ---------------------------------------------------------------------
+# 5. Addressables and Visual Scripting generated data
+#    (harmless if you don't use these packages)
+# ---------------------------------------------------------------------
+/ServerData
+/[Aa]ssets/StreamingAssets/aa*
+/[Aa]ssets/AddressableAssetsData/link.xml*
+/[Aa]ssets/Addressables_Temp*
+/[Aa]ssets/[Aa]ddressable[Aa]ssets[Dd]ata/*/*.bin*
+/[Aa]ssets/Unity.VisualScripting.Generated/VisualScripting.Flow/UnitOptions.bytes
+/[Aa]ssets/Unity.VisualScripting.Generated/VisualScripting.Flow/UnitOptions.bytes.meta
+/[Aa]ssets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers
+/[Aa]ssets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers.meta
+
+# ---------------------------------------------------------------------
+# 6. Operating system junk
+# ---------------------------------------------------------------------
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+
