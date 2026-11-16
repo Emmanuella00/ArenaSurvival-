@@ -55,6 +55,7 @@ public class WaveSpawner : MonoBehaviour
 
         int count = CountForWave(wave);                      // STEP 1
         aliveCount = count;   // set BEFORE spawning, so early kills can't end the wave too soon
+        Debug.Log("Wave " + wave + "/" + totalWaves + " starting with " + count + " enemies");   // <<< NEW LINE
 
         for (int i = 0; i < count; i++)
         {
@@ -107,6 +108,7 @@ public class WaveSpawner : MonoBehaviour
     {
         enemy.OnDied -= HandleEnemyDied;   // OBSERVER: unsubscribe
         aliveCount--;
+        Debug.Log("Enemy died. Still alive: " + aliveCount + " (wave " + wave + "/" + totalWaves + ")");   // <<< NEW LINE
         if (aliveCount > 0) return;
 
         if (wave >= totalWaves) GameManager.Instance.Win();   // SINGLETON

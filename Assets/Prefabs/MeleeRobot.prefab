@@ -182,7 +182,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c3ba151bcc1f6a4087a4e1de30fd9dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MeleeRobot
-  maxHealth: 50
+  maxHealth: 30
   moveSpeed: 3.5
   attackRange: 2
   attackCooldown: 1.2
@@ -192,6 +192,8 @@ MonoBehaviour:
   eyeHeight: 1.5
   path: {fileID: 0}
   bodyRenderer: {fileID: 415451722787142945}
-  dropPrefabs: []
-  dropChance: 0.3
+  dropPrefabs:
+  - {fileID: 3075532319073926444, guid: b5104de8fedc88f43930db2dd8b6bba4, type: 3}
+  - {fileID: 443468358946023981, guid: 679e022ae085a8646b28fa0ac4ae6e7c, type: 3}
+  dropChance: 0.6
   punchDamage: 10

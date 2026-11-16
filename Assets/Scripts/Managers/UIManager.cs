@@ -19,6 +19,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] private TMP_Text ammoText;
     [SerializeField] private TMP_Text waveText;
     [SerializeField] private TMP_Text scoreText;
+    [SerializeField] private TMP_Text endStatsText;
 
     [Header("End screen")]
     [SerializeField] private GameObject endPanel;
@@ -67,7 +68,14 @@ public class UIManager : MonoBehaviour
     public void ShowEndScreen(bool won, int score)
     {
         endPanel.SetActive(true);
-        endTitleText.text = (won ? "YOU SURVIVED!" : "GAME OVER") + "\nScore: " + score;
+
+        // Title and colour depend on the result
+        endTitleText.text = won ? "YOU SURVIVED" : "GAME OVER";
+        endTitleText.color = won ? new Color(0.45f, 0.9f, 0.55f)    // Some green
+                                 : new Color(0.95f, 0.35f, 0.3f);    // Some red
+
+        if (endStatsText != null)
+            endStatsText.text = "Score: " + score + (won ? "\nAll waves cleared" : "\nThe robots got you");
     }
 
     // Hooked to the Restart button's OnClick in the Inspector

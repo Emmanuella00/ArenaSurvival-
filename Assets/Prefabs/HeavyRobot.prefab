@@ -68,7 +68,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6650bcaefc7a4b4fb3c187e1da7c546, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HeavyRobot
-  maxHealth: 150
+  maxHealth: 80
   moveSpeed: 2
   attackRange: 2.5
   attackCooldown: 2.5
@@ -78,8 +78,10 @@ MonoBehaviour:
   eyeHeight: 1.5
   path: {fileID: 0}
   bodyRenderer: {fileID: 6702486075122785509}
-  dropPrefabs: []
-  dropChance: 0.3
+  dropPrefabs:
+  - {fileID: 3075532319073926444, guid: b5104de8fedc88f43930db2dd8b6bba4, type: 3}
+  - {fileID: 443468358946023981, guid: 679e022ae085a8646b28fa0ac4ae6e7c, type: 3}
+  dropChance: 0.6
   slamDamage: 25
   slamRadius: 3
 --- !u!1 &5255297741067339238
